@@ -1,8 +1,12 @@
 import React, {Component, Fragment} from 'react';
 import {handleInitialData} from "./Actions";
 import {connect} from 'react-redux'
-
-
+import {withRouter, Route, BrowserRouter, Switch} from 'react-router-dom'
+import LeaderBoard from './Components/LeaderBoard'
+import AddPoll from './Components/AddPoll'
+import Home from './Components/Home'
+import NoMatch from './Components/NoMatch'
+import PleaseLogIn from './Components/PleaseLogIn'
 import './App.css';
 import Button from '@material-ui/core/Button';
 import Fade from '@material-ui/core/Fade';
@@ -20,22 +24,24 @@ import HeaderNav from './Components/HeaderNav'
 
 
 
+
 class App extends Component {
     constructor(props) {
         super(props)
 
-        this.state = {
-            liLength: 100
-        }
+
     }
 
     componentDidMount = ()=>{
-        this.props.dispatch(handleInitialData())
+
+        console.log('*****APP COMPONENT DID MOUNT*******')
+        if(!this.props.authedUser) {
+            console.log('*****APP COMPONENT DISPATCHING HANDLEINTITALDATA*******')
+            this.props.dispatch(handleInitialData())
+        }
     }
 
-    returnAnLi = (content)=>{
-        return <li>{content}</li>
-    }
+
 
     spitShit = () => {
 
@@ -47,21 +53,42 @@ class App extends Component {
         
     }
   render() {
+      let loggedIn = (this.props.authedUser)
     return (
       <div className="App">
-          <HeaderNav/>
-          <Paper style={{
-              margin: '20px'
+          <BrowserRouter>
+              <Fragment>
+                  <HeaderNav/>
+                  <Paper style={{
+                      margin: '20px'
 
-          }} >
-              <div>
-                  Rest of App
-                  {this.spitShit()}
-              </div>
-          </Paper>
+                  }} >
+                      {
+                          (loggedIn)
+                              ?
+                              <Switch>
+                                  <Route exact path='/leaderboard' component={LeaderBoard}/>
+                                  <Route exact path='/add' component={AddPoll}/>
+                                  <Route exact path='/' component={Home}/>
+                                  <Route component={NoMatch}/>
+                              </Switch>
+                              :
+                              <Switch>
+                                  <Route exact path='/leaderboard' component={PleaseLogIn}/>
+                                  <Route exact path='/add' component={PleaseLogIn}/>
+                                  <Route exact path='/' component={PleaseLogIn}/>
+                                  <Route component={PleaseLogIn}/>
+                              </Switch>
+
+                      }
+                  </Paper>
+              </Fragment>
+          </BrowserRouter>
       </div>
     );
   }
 }
 
-export default connect((state)=>{return {}})(App);
+export default connect((state)=>{return {
+    authedUser: state.authedUser
+}})(App);

@@ -12,7 +12,11 @@ class LogInLogOut extends Component {
 
 
 
+
+
     logInlogOut = (user)=>{
+
+
 
         if (this.props.authedUser) { // USER LOGGED IN, SHOULD LOG OUT
             this.props.dispatch(setAuthedUser(null))
@@ -40,7 +44,10 @@ class LogInLogOut extends Component {
                 <span style={{
                     width: '20px'
                 }}/>
-                <Button onClick={this.logInlogOut} variant='raised' color='secondary'> { authedUser ? 'Logout' : 'Login'} </Button>
+                <Button onClick={this.logInlogOut}
+                        variant='raised' color='secondary'>
+                    { authedUser ? 'Logout' : 'Login'}
+                    </Button>
                 <UserSelect  users={this.props.users}/>
 
 

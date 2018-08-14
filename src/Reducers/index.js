@@ -52,7 +52,7 @@ function urlSelect (state={SubNavValue:null,HeaderNavValue:null},action) {
 }
 
 const reducers = combineReducers({
-    authedUser,git
+    authedUser,
     users,
     showSignIn,
     urlSelect

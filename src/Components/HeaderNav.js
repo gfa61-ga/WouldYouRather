@@ -1,5 +1,6 @@
 import React, {Component, Fragment} from 'react'
 import {connect} from 'react-redux'
+import {Link, NavLink, withRouter} from 'react-router-dom'
 import Button from '@material-ui/core/Button';
 import Fade from '@material-ui/core/Fade';
 import AppBar from '@material-ui/core/AppBar'
@@ -14,13 +15,66 @@ import MenuItem from '@material-ui/core/MenuItem';
 import SubNav from './SubNav'
 import LogInLogOut from './LogInLogOut'
 
-
+// TODO: restore SubNav if necessary: {(loggedIn) && <SubNav/>} in render/below </Toolbar>
 
 
 class HeaderNav extends Component {
     constructor(props) {
         super(props)
 
+    }
+
+    state = {
+        value: 0
+    }
+
+    componentDidMount = ()=>{
+
+        this.updateLocation(this.props.location.pathname)
+
+
+    }
+
+    updateLocation = (location)=>{
+
+        console.log(`update location called with ${location}`)
+
+        if (location === '/') {
+            this.setState(
+                (prevState,props)=>{
+                    return {value: 0}
+                }
+            )
+        }
+
+        if (location.startsWith('/add')) {
+            this.setState(
+                (prevState,props)=>{
+                    return {value: 1}
+                }
+            )
+
+        }
+
+        if ((location === '/leaderboard') || (location ==='/leaderboard/')) {
+            this.setState(
+                (prevState,props)=>{
+                    return {value: 2}
+                }
+            )
+
+        }
+
+    }
+
+    componentDidUpdate = (prevProps) => {
+
+
+        console.log('old location',prevProps.location.pathname,'new location',this.props.location.pathname)
+        console.log('HeaderNave didnav test?', (prevProps.location.pathname !== this.props.location.pathname))
+        if (prevProps.location.pathname !== this.props.location.pathname) {
+            this.updateLocation(this.props.location.pathname)
+        }
 
     }
 
@@ -28,36 +82,35 @@ class HeaderNav extends Component {
 
 
 
-    handleHomeClick = event => {
+    handleChange = (event,value) => {
         console.log('handleHomeClickTriggered', event.currentTarget)
-        this.setState({ anchorEl: event.currentTarget });
+        // this.setState({ value });
     };
 
 
 
     render () {
-        let loggedIn = !(this.props.authedUser)
+        let loggedIn = (this.props.authedUser)
         return (
             <Fragment>
 
 
             <AppBar position='sticky' >
 
-                <Toolbar variant="dense" disableGutters={false}
-                    // style={{position:"top"}}
-                >
+                <Toolbar variant="dense" disableGutters={false}>
 
-                        <Tabs  value={null}>
-                            <Tab onClick={this.handleHomeClick} disabled={loggedIn} label="Home"></Tab>
-                            <Tab label="Post Question" disabled={loggedIn}/>
-                            <Tab label="LeaderBoard" disabled={loggedIn}/>
+                        <Tabs value={this.state.value} onChange={this.handleChange}>
+                            <Tab  label="Home" disabled={!loggedIn} component={Link} to={{pathname:'/'}}/>
+                            <Tab  label="Post Question" disabled={!loggedIn} component={Link} to={{pathname:'/add'}}/>
+                            <Tab  label="LeaderBoard" disabled={!loggedIn} component={Link} to={{pathname:'/leaderboard'}} />
                         </Tabs>
                     <span style={{flexGrow:1}}> </span>
                     <LogInLogOut/>
 
 
                 </Toolbar>
-                {(!loggedIn) && <SubNav/>}
+                {/*TODO: restore SubNav if necessary: {(loggedIn) && <SubNav/>}*/}
+
 
             </AppBar>
 
@@ -72,8 +125,8 @@ class HeaderNav extends Component {
     }
 }
 
-export default connect((state)=>{return {
+export default withRouter(connect((state)=>{return {
      authedUser: state.authedUser
-}})(HeaderNav)
+}})(HeaderNav))
 // export default  HeaderNav
 

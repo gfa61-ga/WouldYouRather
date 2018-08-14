@@ -5,10 +5,22 @@ export const SHOW_SIGN_IN = 'SHOW_SIGN_IN'
 export const MENU_URL_SELECT = 'MENU_URL_SELECT'
 
 export function setAuthedUser (id) {
+    sessionStorage.user = id
+
+    return (dispatch)=>{
+        dispatch(setAuthedUserInStore(id))
+
+    }
+
+
+}
+
+export function setAuthedUserInStore (id) {
     return {
         type: SET_AUTHED_USER,
         id,
     }
+
 }
 
 export function showSignIn(open) {
@@ -29,7 +41,13 @@ export function handleInitialData () {
     return (disptach) =>{
 
         API._getUsers()
-            .then(users=>disptach(initUsers(users)))
+            .then(users=>{
+                disptach(initUsers(users))
+                console.log('from handling intialData: sessionStorage',sessionStorage);
+                if (sessionStorage.user === 'null') {disptach(setAuthedUserInStore(null))} else {
+                    disptach(setAuthedUserInStore(sessionStorage.user))
+                }
+            })
 
     }
 }
