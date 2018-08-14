@@ -15,7 +15,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import SubNav from './SubNav'
 import LogInLogOut from './LogInLogOut'
 
-// TODO: restore SubNav if necessary: {(loggedIn) && <SubNav/>} in render/below </Toolbar>
+
 
 
 class HeaderNav extends Component {
@@ -109,7 +109,7 @@ class HeaderNav extends Component {
 
 
                 </Toolbar>
-                {/*TODO: restore SubNav if necessary: {(loggedIn) && <SubNav/>}*/}
+
 
 
             </AppBar>

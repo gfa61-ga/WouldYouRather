@@ -64,7 +64,7 @@ class App extends Component {
 
                   }} >
                       {
-                          (loggedIn)
+                           (loggedIn)
                               ?
                               <Switch>
                                   <Route exact path='/leaderboard' component={LeaderBoard}/>

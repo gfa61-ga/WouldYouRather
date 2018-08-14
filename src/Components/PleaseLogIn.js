@@ -5,7 +5,9 @@ class PleaseLogIn extends Component {
     render () {
         return (
             <div>
-                <h3>Please log in before Playing</h3>
+                <h3 style={{
+                    color: 'red'
+                }}>Please log in before Playing</h3>
             </div>
         )
     }
