@@ -1,14 +1,29 @@
-import React, {Component} from 'react'
-import {Link} from 'react-router-dom'
+import React, {Component, Fragment} from 'react'
+
+import SnackbarContent from '@material-ui/core/SnackbarContent';
+import Button from '@material-ui/core/Button';
 
 class PleaseLogIn extends Component {
-    render () {
+    render() {
         return (
-            <div>
-                <h3 style={{
-                    color: 'red'
-                }}>Please log in before Playing</h3>
-            </div>
+            <Fragment>
+                {
+                    (!(typeof sessionStorage.user) || (sessionStorage.user === 'null')) // show sign in only if user logged of session
+                        ?
+                        <SnackbarContent
+                            style={{
+                                maxWidth: '100%'
+                            }}
+                            message={
+                                <Button
+
+                                    color='secondary'>
+                                    Please Log In before playing
+                                </Button>
+                            }/>
+                        : null
+                }
+            </Fragment>
         )
     }
 }

@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+
 import {connect} from 'react-redux'
 
 import Dialog from '@material-ui/core/Dialog';
@@ -8,14 +9,9 @@ import ListItem from '@material-ui/core/ListItem';
 
 import UserChip from './UserChip'
 
-
 class UserSelect extends Component {
 
-    close = ()=>{
-        this.setState({
 
-        })
-    }
 
     render () {
         return (
@@ -36,7 +32,6 @@ class UserSelect extends Component {
                         }
                     </List>
                 </div>
-
             </Dialog>
         )
     }

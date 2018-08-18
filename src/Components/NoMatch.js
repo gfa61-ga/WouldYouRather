@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {Link} from 'react-router-dom'
 
 class NoMatch extends Component {
 
@@ -9,11 +10,11 @@ class NoMatch extends Component {
                     color: 'red'
                 }}> URL Not found </h3>
                 <p> Please click on the NavBar to navigate to a valid URL</p>
-                <a href='/'>Home</a>
+                <Link to='/'>Home</Link>
                 <hr/>
-                <a href='/add'>Add Question</a>
+                <Link to='/add'>Add Question</Link>
                 <hr/>
-                <a href='/leaderboard'>View Leaderboard</a>
+                <Link to='/leaderboard'>View Leaderboard</Link>
             </div>
         )
     }

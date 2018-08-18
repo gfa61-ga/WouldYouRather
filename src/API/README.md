@@ -1,4 +1,11 @@
-# Would You Rather Project
+
+[asdf](#go-there)
+
+
+
+# Go There
+
+# Would You Rather Project - Strater README
 
 This is the starter code for the final assessment project for Udacity's React & Redux course.
 
