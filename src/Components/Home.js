@@ -4,7 +4,7 @@ import {connect} from 'react-redux'
 import UnAnswered from './UnAnswered'
 import Answered from './Answered'
 
-//TODO: redirect after login to Home
+
 
 class Home extends Component {
 

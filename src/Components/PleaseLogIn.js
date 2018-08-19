@@ -1,14 +1,24 @@
 import React, {Component, Fragment} from 'react'
 
+import {connect} from 'react-redux'
+
 import SnackbarContent from '@material-ui/core/SnackbarContent';
 import Button from '@material-ui/core/Button';
 
+
+
 class PleaseLogIn extends Component {
+
+
+
     render() {
+
+        const {signedIn} = this.props
         return (
             <Fragment>
                 {
-                    (!(typeof sessionStorage.user) || (sessionStorage.user === 'null')) // show sign in only if user logged of session
+
+                    (!signedIn) // show sign in only if user logged of session
                         ?
                         <SnackbarContent
                             style={{
@@ -28,4 +38,10 @@ class PleaseLogIn extends Component {
     }
 }
 
-export default PleaseLogIn
+function mapStateToProps({authedUser}) {
+    return {
+        signedIn: (authedUser) ? true : false
+    }
+}
+
+export default connect(mapStateToProps)(PleaseLogIn)

@@ -3,7 +3,7 @@ import Button from '@material-ui/core/Button';
 
 import {connect} from 'react-redux'
 
-import {setAuthedUser, showSignIn} from '../Actions'
+import {setAuthedUser, showSignIn, redirectToHome} from '../Actions'
 
 import UserSelect from './UserSelect'
 import UserChip from './UserChip'
@@ -12,9 +12,13 @@ class LogInLogOut extends Component {
     logInlogOut = () => {
         if (this.props.authedUser) { // USER LOGGED IN, SHOULD LOG OUT
             this.props.dispatch(setAuthedUser(null))
+            this.props.dispatch(redirectToHome(true))
+
 
         } else { // LOGGED OUT, SHOULD LOG IN
             this.props.dispatch(showSignIn(true))
+
+
         }
     }
 

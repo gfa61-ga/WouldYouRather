@@ -6,6 +6,15 @@ export const SHOW_SIGN_IN = 'SHOW_SIGN_IN'
 export const MENU_URL_SELECT = 'MENU_URL_SELECT'
 export const SUBMIT_VOTE = 'SUBMIT_VOTE'
 export const SAVE_QUESTION = 'SAVE_QUESTION'
+export const REDIRECT_TO_HOME = 'REDIRECT_TO_HOME'
+
+export function redirectToHome(value) {
+    return {
+        type: REDIRECT_TO_HOME,
+        value
+    }
+
+}
 
 export function handleNewQuestion(question) {
     return (dispatch)=>{
@@ -45,18 +54,8 @@ export function submitVote (authedUser,qid,answer) {
 
 
 
+
 export function setAuthedUser (id) {
-    sessionStorage.user = id
-
-    return (dispatch)=>{
-        dispatch(setAuthedUserInStore(id))
-
-    }
-
-
-}
-
-export function setAuthedUserInStore (id) {
     return {
         type: SET_AUTHED_USER,
         id,
@@ -88,20 +87,14 @@ export function initQuestion (questions) {
 
 
 
+
 export function handleInitialData () {
     return (disptach) =>{
 
         return API._getUsers()
             .then(users=>{
                 disptach(initUsers(users))
-                if ((sessionStorage.user === 'null') || (!sessionStorage.user) )
-                {
-                    console.log('about do dipatch null')
-                    disptach(setAuthedUserInStore(null))}
-                    else {
-                    console.log('about do dipatch sessionStorage.user',sessionStorage.user)
-                    disptach(setAuthedUserInStore(sessionStorage.user))
-                }
+
                 API._getQuestions()
                     .then(questions=>{
                         disptach(initQuestion(questions))

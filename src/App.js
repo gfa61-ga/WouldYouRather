@@ -2,7 +2,7 @@ import React, {Component, Fragment} from 'react';
 
 import {connect} from 'react-redux';
 
-import {handleInitialData} from "./Actions";
+import {handleInitialData, redirectToHome} from "./Actions";
 
 import {Redirect, Route, Switch, withRouter} from 'react-router-dom'
 
@@ -21,18 +21,35 @@ import Paper from '@material-ui/core/Paper';
 
 import './App.css';
 
+
+
 class App extends Component {
 
     componentDidMount = () => {
+        console.log('App did mount')
         if (!this.props.authedUser) {
             this.props.dispatch(handleInitialData())
+        }
+    }
+
+
+    componentDidUpdate = ()=> {
+
+        // REDIRECT TO HOME IS dispatched UPON LOGOUT
+        if (this.props.location.pathname === '/') { // disable redirect to home when you get home
+            this.props.dispatch(redirectToHome(false))
+
         }
     }
 
     render() {
 
         let loggedIn = (this.props.authedUser)
-        console.log('*****App RENDER******', loggedIn)
+        let {redirectToHome} = this.props
+
+        if (redirectToHome) {
+            return (<Redirect to='/'/>)
+        }
 
         return (
             <div className="App">
@@ -58,17 +75,13 @@ class App extends Component {
                                 :
 
                                 <Fragment>
-                                    {((this.props.location.pathname !== '/') && (sessionStorage.user === 'null')) // redirect only on logout
-                                        ?
-                                        (<Redirect to='/'/>)
-                                        :
-                                        null
-                                    }
+
                                     <Switch>
                                         <Route exact path='/leaderboard' component={PleaseLogIn}/>
                                         <Route exact path='/add' component={PleaseLogIn}/>
+                                        <Route path='/questions/:question_id' component={PleaseLogIn}/>
                                         <Route exact path='/' component={PleaseLogIn}/>
-                                        <Route component={PleaseLogIn}/>
+                                        <Route component={NoMatch}/>
                                     </Switch>
                                 </Fragment>
                         }
@@ -94,6 +107,8 @@ class App extends Component {
 
 export default withRouter(connect((state) => {
     return {
-        authedUser: state.authedUser
+        authedUser: state.authedUser,
+        singedIn: (state.authedUser) ? true : false,
+        redirectToHome: state.redirectToHome
     }
 })(App));

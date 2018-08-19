@@ -2,33 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4053ba5-1607-4724-9564-a8c19d14aa91" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/Avatars/john.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Avatars/sarah.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Avatars/tyler.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/LeaderCards.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/PollCards.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/ViewOnePoll.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/_DATA.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/_DATA.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Actions/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/AddPoll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AddPoll.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Answered.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Answered.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/HeaderNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/HeaderNav.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/LeaderBoard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LeaderBoard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/LogInLogOut.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LogInLogOut.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/NoMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/NoMatch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/PleaseLogIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/PleaseLogIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/SubNav.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UnAnswered.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UnAnswered.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UserChip.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UserChip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UserSelect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UserSelect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Middleware/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Middleware/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -50,8 +31,11 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Reducers/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1278">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="393">
+              <caret line="116" column="15" lean-forward="true" selection-start-line="116" selection-start-column="15" selection-end-line="116" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,8 +44,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="195">
-                <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+              <first_editor relative-caret-position="-82">
+                <caret line="119" column="45" selection-start-line="119" selection-start-column="45" selection-end-line="119" selection-end-column="45" />
               </first_editor>
               <second_editor>
                 <js_state />
@@ -70,11 +54,59 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="37" column="53" lean-forward="true" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddPoll.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/AddPoll.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PleaseLogIn.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/PleaseLogIn.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-18">
+              <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Actions/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1405">
-              <caret line="99" column="49" selection-start-line="99" selection-start-column="29" selection-end-line="99" selection-end-column="49" />
+            <state relative-caret-position="28">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogInLogOut.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/LogInLogOut.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,13 +122,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>authedUser</find>
-      <find>true</find>
-      <find>returnAnLi</find>
-      <find>react-rout</find>
-      <find>setSZ</find>
-      <find>wrap</find>
-      <find>YouVoted</find>
       <find>Result</find>
       <find>formatQuestion</find>
       <find>cont</find>
@@ -119,14 +144,21 @@
       <find>urlSelect</find>
       <find>URL</find>
       <find>Link</find>
+      <find>sessionStorage.user</find>
+      <find>sessionStorage</find>
       <find>submit</find>
+      <find>&lt;Redirect</find>
+      <find>sessionS</find>
+      <find>sessionSto</find>
+      <find>pathname</find>
+      <find>setAuthedUserInStore</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="FirstSubmission" />
       </map>
     </option>
   </component>
@@ -144,21 +176,21 @@
         <option value="$PROJECT_DIR$/src/Components/AddPoll.js" />
         <option value="$PROJECT_DIR$/src/Components/Answered.js" />
         <option value="$PROJECT_DIR$/src/Components/HeaderNav.js" />
-        <option value="$PROJECT_DIR$/src/Components/Home.js" />
         <option value="$PROJECT_DIR$/src/Components/LeaderBoard.js" />
         <option value="$PROJECT_DIR$/src/Components/LeaderCards.js" />
-        <option value="$PROJECT_DIR$/src/Components/LogInLogOut.js" />
         <option value="$PROJECT_DIR$/src/Components/NoMatch.js" />
-        <option value="$PROJECT_DIR$/src/Components/PleaseLogIn.js" />
         <option value="$PROJECT_DIR$/src/Components/PollCards.js" />
         <option value="$PROJECT_DIR$/src/Components/UnAnswered.js" />
         <option value="$PROJECT_DIR$/src/Components/UserChip.js" />
         <option value="$PROJECT_DIR$/src/Components/UserSelect.js" />
         <option value="$PROJECT_DIR$/src/Components/ViewOnePoll.js" />
-        <option value="$PROJECT_DIR$/src/Reducers/index.js" />
-        <option value="$PROJECT_DIR$/src/Actions/index.js" />
         <option value="$PROJECT_DIR$/src/API/README.md" />
+        <option value="$PROJECT_DIR$/src/Components/Home.js" />
+        <option value="$PROJECT_DIR$/src/Components/PleaseLogIn.js" />
+        <option value="$PROJECT_DIR$/src/Reducers/index.js" />
+        <option value="$PROJECT_DIR$/src/Components/LogInLogOut.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/Actions/index.js" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -240,6 +272,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="sessionStorage&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.prettier" value="true" />
@@ -292,11 +325,18 @@
       <option name="project" value="LOCAL" />
       <updated>1534256152247</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="for submission">
+      <created>1534608343340</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1534608343341</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120783000" />
+    <option name="totallyTimeSpent" value="125467000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -309,18 +349,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
-      <window_info anchor="bottom" id="TODO" order="6" visible="true" weight="0.32793018" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
+      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.32793018" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5003524" side_tool="true" weight="0.28802994" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32793018" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.28802994" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49964765" weight="0.28802994" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="7" />
@@ -379,7 +418,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add answered/unanswered state for tabs switching" />
-    <option name="LAST_COMMIT_MESSAGE" value="add answered/unanswered state for tabs switching" />
+    <MESSAGE value="for submission" />
+    <option name="LAST_COMMIT_MESSAGE" value="for submission" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/index.js">
@@ -654,16 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/PleaseLogIn.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/UserSelect.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="537">
@@ -684,16 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/AddPoll.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="147" column="23" selection-start-line="147" selection-start-column="23" selection-end-line="147" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/LeaderBoard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -704,32 +724,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="105" column="17" selection-start-line="104" selection-start-column="8" selection-end-line="105" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/Answered.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
           <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="67" column="72" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -764,35 +764,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="15331" column="12" selection-start-line="15331" selection-start-column="12" selection-end-line="15331" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="43" lean-forward="true" selection-start-column="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/AddPoll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/LogInLogOut.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="210">
+          <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Actions/index.js">
+    <entry file="file://$PROJECT_DIR$/src/Components/PleaseLogIn.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1405">
-          <caret line="99" column="49" selection-start-line="99" selection-start-column="29" selection-end-line="99" selection-end-column="49" />
+        <state relative-caret-position="-18">
+          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="53" lean-forward="true" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Reducers/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1278">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="393">
+          <caret line="116" column="15" lean-forward="true" selection-start-line="116" selection-start-column="15" selection-end-line="116" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Actions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="195">
-            <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <first_editor relative-caret-position="-82">
+            <caret line="119" column="45" selection-start-line="119" selection-start-column="45" selection-end-line="119" selection-end-column="45" />
           </first_editor>
           <second_editor>
             <js_state />

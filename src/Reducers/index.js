@@ -5,6 +5,7 @@ import {SHOW_SIGN_IN} from "../Actions";
 import {INIT_QUESTIONS} from "../Actions";
 import {SUBMIT_VOTE} from "../Actions";
 import {SAVE_QUESTION} from "../Actions";
+import {REDIRECT_TO_HOME} from "../Actions";
 
 import {combineReducers} from 'redux'
 
@@ -102,12 +103,22 @@ function showSignIn (state=false,action) {
     }
 }
 
+function redirectToHome (state=false,action) {
+    switch (action.type) {
+        case REDIRECT_TO_HOME:
+            return action.value
+        default:
+            return state
+    }
+}
+
 
 const reducers = combineReducers({
     authedUser,
     users,
     questions,
     showSignIn,
+    redirectToHome
 
 })
 

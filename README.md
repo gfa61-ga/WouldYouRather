@@ -116,9 +116,8 @@ Store =
 
 | Action Creator | Sync/Async | Role |
 |-----------------|------------------|-------------------|
-| handleInitialData |Async  | fetches _DATA using API, dispatches initQuestions, initUsers and setAuthedUserInStore if the user is still authed in the browser sessionStorage |
-| setAuthedUser |  | sets authedUser in browser sessionStorage and dispatches setAuthedUserInStore |
-| setAuthedUserInStore |Sync  | sets the authed user in store |
+| handleInitialData |Async  | fetches _DATA using API, dispatches initQuestions, initUsers and setAuthedUser|
+| setAuthedUser |  | sets authedUser in store |
 | showSignIn |Sync  | modifies flag for conditional modal rendering of users list to login |
 | InitUsers |Sync  | Initializes the store with users {} |
 | InitQuestions |Sync  | Initializes the store with questions {} |
